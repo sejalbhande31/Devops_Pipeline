@@ -40,6 +40,13 @@ pipeline {
                 bat 'mvn package'  // Windows batch command
             }
         }
+        
+         stage('Run JAR') {
+            steps {
+                echo 'Running the generated JAR file...'
+                bat 'java -jar target/program1-0.0.1-SNAPSHOT.jar'
+            }
+        }
     }
 
     post {
