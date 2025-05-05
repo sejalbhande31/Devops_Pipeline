@@ -2,7 +2,7 @@ pipeline {
     agent any  // Runs on any available agent
 
     tools {
-        maven 'Maven 3.8.1'   // Replace with the name of your Maven tool configured in Jenkins
+        maven 'Maven 3.9.1'   // Replace with the name of your Maven tool configured in Jenkins
         jdk 'JDK 17'          // Replace with your configured JDK name
     }
 
